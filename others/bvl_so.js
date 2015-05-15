@@ -22,6 +22,8 @@ module.exports = {
 
       var reValidEmail = new RegExp(sValidEmail);
 
+      this.rx = reValidEmail;
+
       if (reValidEmail.test(emailAddress)) {
         return true;
       }
